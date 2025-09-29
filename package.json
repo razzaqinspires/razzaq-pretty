@@ -1,0 +1,23 @@
+{
+  "name": "razzaq-pretty",
+  "version": "0.3.0",
+  "type": "module",
+  "description": "An uncompromising and superior AST-based code formatter, forged by Prometheus Prime.",
+  "bin": {
+    "razzaq-pretty": "./bin/razzaq-pretty"
+  },
+  "scripts": {
+    "format": "node ./src/cli.js --write \"src/**/*.js\"",
+    "clear-cache": "rm -f .razzaqcache"
+  },
+  "dependencies": {
+    "@babel/generator": "^7.24.7",
+    "@babel/parser": "^7.24.7",
+    "@babel/traverse": "^7.24.7",
+    "glob": "^10.3.10",
+    "prettier": "^3.2.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
